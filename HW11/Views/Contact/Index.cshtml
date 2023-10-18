@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@{
+    Contact contact = new Contact();
+    contact.Name = "Olga";
+    contact.PhoneNumber = "+380999999999";
+    contact.Email = "111@gmail.com";
+    contact.Description = " Head of the youth center";
+}
+<div>
+    <h1>Contact</h1>
+</div>
+<div>
+    <h6>Name:</h6>
+    @contact.Name;
+    <br /><br />
+    <h6>Phone Number:</h6>
+    @contact.PhoneNumber;
+    <br /><br />
+    <h6>Alternative Phone Number:</h6>
+    @contact.AlternativePhoneNumber;
+    <br /><br />
+    <h6>Email:</h6>
+    @contact.Email;
+    <br /><br />
+    <h6>Description:</h6>
+    @contact.Description;
+    <br /><br />
+</div>
